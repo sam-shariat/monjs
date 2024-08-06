@@ -6,7 +6,7 @@ type ChainContract = {
   blockCreated?: number
 }
 
-export const supportedChains = [1, 5, 17000, 11155111] as const
+export const supportedChains = [1, 5, 17000, 11155111, 421614] as const
 export const supportedContracts = [
   'ensBaseRegistrarImplementation',
   'ensBulkRenewal',
@@ -54,6 +54,38 @@ export const addresses = {
     },
     ensUniversalResolver: {
       address: '0xce01f8eee7E479C928F8919abD53E553a36CeF67',
+    },
+  },
+  421614: {
+    ensBaseRegistrarImplementation: {
+      address: '0xAa86685E6f1470338F73a707eDb0Da5F61f7CA9F',
+    },
+    ensBulkRenewal: {
+      address: '0xa12159e5131b1eEf6B4857EEE3e1954744b5033A',
+    },
+    ensDnsRegistrar: {
+      address: '0xB32cB5677a7C971689228EC835800432B339bA2B',
+    },
+    ensDnssecImpl: {
+      address: '0x0fc3152971714E5ed7723FAFa650F86A4BaF30C5',
+    },
+    ensEthRegistrarController: {
+      address: '0x89C108a78Ef261a9F9e977E566b310cB3518E714',
+    },
+    ensNameWrapper: {
+      address: '0x955357E06046C91186cf4571f4dD729157bFBCfB',
+    },
+    ensPublicResolver: {
+      address: '0x7016f6BAfD4Ae35a30DD264Ce8EEcA16AB417fAD',
+    },
+    ensRegistry: {
+      address: '0x559Ab8a76956436B16918CfDfB291d768264CdEc',
+    },
+    ensReverseRegistrar: {
+      address: '0xd05661277665E9FB85d5AcB5CBb30de2D6076988',
+    },
+    ensUniversalResolver: {
+      address: '0x8732a41F2C863c83452B863103D7a32bAD5E970e',
     },
   },
   5: {
@@ -182,6 +214,11 @@ export const subgraphs = {
   11155111: {
     ens: {
       url: 'https://api.studio.thegraph.com/query/49574/enssepolia/version/latest',
+    },
+  },
+  421614: {
+    ens: {
+      url: 'https://api.studio.thegraph.com/query/85626/monid/version/latest',
     },
   },
 } as const satisfies Record<SupportedChain, Subgraphs>
