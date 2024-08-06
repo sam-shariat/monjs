@@ -1,5 +1,5 @@
 {
-  "name": "ensjs-monorepo",
+  "name": "monjs-monorepo",
   "private": true,
   "workspaces": [
     "packages/*"
