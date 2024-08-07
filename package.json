@@ -1,7 +1,7 @@
 {
   "name": "@monadid/monjs",
-  "version": "0.0.3",
-  "description": "ENS javascript library for contract interaction",
+  "version": "0.0.4",
+  "description": "Monad ID javascript library for contract interaction ( ENS Clone )",
   "type": "module",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
