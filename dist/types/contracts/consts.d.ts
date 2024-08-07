@@ -198,7 +198,7 @@ export declare const subgraphs: {
     };
     readonly 421614: {
         readonly ens: {
-            readonly url: "https://api.studio.thegraph.com/query/85626/monid/version/latest";
+            readonly url: "https://api.studio.thegraph.com/query/85626/monid/v0.0.1";
         };
     };
 };

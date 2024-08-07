@@ -196,7 +196,7 @@ export const subgraphs = {
     },
     421614: {
         ens: {
-            url: 'https://api.studio.thegraph.com/query/85626/monid/version/latest',
+            url: 'https://api.studio.thegraph.com/query/85626/monid/v0.0.1',
         },
     },
 };
